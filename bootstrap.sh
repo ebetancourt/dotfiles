@@ -6,4 +6,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
 fi
+
+gtoken=`cat ~/Dropbox/configsetup/github_token.txt`
+sed s/%gittoken%/$gtoken/g .gitconfig > ~/.gitconfig
 source "$HOME/.bash_profile"

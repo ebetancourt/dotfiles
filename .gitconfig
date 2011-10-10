@@ -1,3 +1,9 @@
+[user]
+	name = Elliot Betancourt
+	email = elliot@elliotbetancourt.com
+[github]
+	token = %gittoken%
+	user = ebetancourt
 [apply]
 	whitespace = fix
 [core]
@@ -21,6 +27,8 @@
 	untracked = cyan
 [merge]
 	log = true
+[difftool "Kaleidoscope"]
+    cmd = "ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\""
 [url "git@github.com:"]
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"

@@ -8,6 +8,18 @@ alias phpunit='phpunit --stderr --coverage-html=/Users/elliot/report'
 alias svnmod='svn st --ignore-externals | grep ^M'
 alias svnnew='svn st --ignore-externals | grep ^?'
 
+# Create a new github repo (I am an extremely lazy typist)
+function newgh() {
+    mkdir "$1"
+    cd "$1"
+    git init
+    touch README.md
+    git add README.md
+    git commit -m 'first commit'
+    git remote add origin git@github.com:ebetancourt/$1.git
+    git push -u origin master
+}
+
 # Turn on advanced bash completion if the file exists
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion

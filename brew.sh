@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)";
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)";
 brew install autojump;
 brew install bash-completion;
 brew install byobu;

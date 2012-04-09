@@ -6,7 +6,8 @@ for file in bash_prompt exports aliases functions extra elliot_custom; do
 done
 unset file
 
-PATH=/usr/local/zend/bin:/usr/local/zend/mysql/bin:$PATH
+# PATH=/Applications/MAMP/bin:/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/bin/apache2/bin:$PATH
+PATH=~/bin:/usr/local/zend/bin:/usr/local/zend/mysql/bin:$PATH
 LD_LIBRARY_PATH=/usr/local/zend/lib:$LD_LIBRARY_PATH
 
 # Case-insensitive globbing (used in pathname expansion)

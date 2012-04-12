@@ -1,5 +1,6 @@
-# Load ~/.bash_prompt, ~/.exports, ~/.aliases, ~/.functions and ~/.extra
+# Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
+
 for file in bash_prompt exports aliases functions extra elliot_custom; do
   file="$HOME/.$file"
   [ -e "$file" ] && source "$file"
@@ -12,6 +13,12 @@ LD_LIBRARY_PATH=/usr/local/zend/lib:$LD_LIBRARY_PATH
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
+
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"

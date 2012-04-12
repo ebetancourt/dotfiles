@@ -1,8 +1,8 @@
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
-# Append a slash when autocompleting symbolic links to directories
-set mark-symlinked-directories on
+# Don’t prompt unless there are over 500 possible completions
+set completion-query-items 500
 
 # List all matches in case multiple possible completions are possible
 set show-all-if-ambiguous on

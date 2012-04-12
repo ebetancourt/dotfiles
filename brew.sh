@@ -12,5 +12,6 @@ brew install memcached;
 brew install ssh-copy-id;
 brew install wget;
 brew install zeromq;
+brew install gnu-sed;
 
 sudo easy_install pip && pip install Mercurial;
